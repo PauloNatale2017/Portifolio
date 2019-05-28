@@ -1,0 +1,171 @@
+﻿@*<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>*@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>MeetMe Personal</title>
+    <!-- Bootstrap CSS -->   
+    <link rel="stylesheet" href="~/Layouts/meetme-gh-pages/css/bootstrap.css">
+    <link rel="stylesheet" href="~/Layouts/meetme-gh-pages/vendors/linericon/style.css">
+    <link rel="stylesheet" href="~/Layouts/meetme-gh-pages/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Layouts/meetme-gh-pages/vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/Layouts/meetme-gh-pages/vendors/lightbox/simpleLightbox.css">
+    <link rel="stylesheet" href="~/Layouts/meetme-gh-pages/vendors/nice-select/css/nice-select.css">
+    <link rel="stylesheet" href="~/Layouts/meetme-gh-pages/vendors/animate-css/animate.css">
+    <link rel="stylesheet" href="~/Layouts/meetme-gh-pages/vendors/popup/magnific-popup.css">
+    <link rel="stylesheet" href="~/Layouts/meetme-gh-pages/vendors/flaticon/flaticon.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="~/Layouts/meetme-gh-pages/css/style.css">
+    <link rel="stylesheet" href="~/Layouts/meetme-gh-pages/css/responsive.css">
+</head>
+<body>
+
+    <!--================Header Menu Area =================-->
+    
+    <section class="home_banner_area">
+        <div class="container box_1620">
+            <div class="banner_inner d-flex align-items-center">
+                <div class="banner_content">
+                    <div class="media">
+                        <div class="d-flex">
+                            <img src="~/Layouts/meetme-gh-pages/img/10670268_10204117260345347_4237933878350347819_n.jpg" alt="">
+                        </div>
+                        <div class="media-body">
+                            <div class="personal_text">
+                                <h6>Hello Everybody, i am</h6>
+                                <h3>Paulo Natale</h3>
+                                <h4>Senior Developer</h4>
+                                <p>I work with software development using the most current technologies in the market produrando always deliver to my clients the best of what I can with the best of what exists, thus forcing me to be better every day! after all this is the life I love and chose for myself.</p>
+                                <ul class="list basic_info">
+                                    <li><a href="#"><i class="lnr lnr-calendar-full"></i> 07st Juny, 1986</a></li>
+                                    <li><a href="#"><i class="lnr lnr-phone-handset"></i> (011) 94166-9686</a></li>
+                                    <li><a href="#"><i class="lnr lnr-envelope"></i> paulo000natale@gmail.com</a></li>
+                                    <li><a href="#"><i class="lnr lnr-home"></i> Atibia / São Paulo</a></li>
+                                </ul>
+                                <ul class="list personal_social">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <header class="header_area">
+        <div class="main_menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container box_1620">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <a class="navbar-brand logo_h" href="index.html"><img src="~/Layouts/meetme-gh-pages/img/logo.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav menu_nav ml-auto">
+                            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                            <li class="nav-item submenu dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item submenu dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <div>
+        @RenderBody()       
+        @*<footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>*@
+    </div>
+
+    <script src="~/Layouts/meetme-gh-pages/js/jquery-3.3.1.min.js"></script>
+    <script src="~/Layouts/meetme-gh-pages/js/popper.js"></script>
+    <script src="~/Layouts/meetme-gh-pages/js/bootstrap.min.js"></script>
+    <script src="~/Layouts/meetme-gh-pages/js/stellar.js"></script>
+    <script src="~/Layouts/meetme-gh-pages/vendors/lightbox/simpleLightbox.min.js"></script>
+    <script src="~/Layouts/meetme-gh-pages/vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="~/Layouts/meetme-gh-pages/vendors/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="~/Layouts/meetme-gh-pages/vendors/isotope/isotope.pkgd.min.js"></script>
+    <script src="~/Layouts/meetme-gh-pages/vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="~/Layouts/meetme-gh-pages/vendors/popup/jquery.magnific-popup.min.js"></script>
+    <script src="~/Layouts/meetme-gh-pages/js/jquery.ajaxchimp.min.js"></script>
+    <script src="~/Layouts/meetme-gh-pages/vendors/counter-up/jquery.waypoints.min.js"></script>
+    <script src="~/Layouts/meetme-gh-pages/vendors/counter-up/jquery.counterup.min.js"></script>
+    <script src="~/Layouts/meetme-gh-pages/js/mail-script.js"></script>
+    <script src="~/Layouts/meetme-gh-pages/js/theme.js"></script>
+</body>
+</html>
